@@ -5,6 +5,9 @@
   background-position: center;
 
   &__inner {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     text-align: center;
   }
@@ -14,15 +17,19 @@
     font-weight: 400;
     font-size: 76px;
     letter-spacing: 0.02em;
+    margin-bottom: 10px;
   }
 
   &__subtitle {
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 48px;
-    border-bottom: 1px solid #040404;;
+    border-bottom: 1px solid #040404;
+    margin-bottom: 10px;
+   align-self: center;
   }
   &__subtitle span {
+    padding: 10px 0;
     color: #9f6b08;
     font-size: 34px;
     display: block;
@@ -30,5 +37,12 @@
   &__text {
     font-size: 16px;
     color: #363636;
+    margin-bottom: 10px;
+  }
+  &-arrow {
+    //сдвинулся за счет flex родителя и Margin
+    margin-top: auto;
+    margin-bottom: 30px;
+    align-self: center;
   }
 }

@@ -22,8 +22,13 @@ a {
 li {
   list-style-type: none;
 }
-.container {
+.container-big {
   max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container {
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 10px;
 }
