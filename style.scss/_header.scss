@@ -1,0 +1,26 @@
+.header {
+  padding-top: 25px;
+  position: absolute; // поднял картинку вверх
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, #d8d4ca 0%, rgba(217, 217, 217, 0) 100%);
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 25px;
+    &-left {
+      padding-left: 25px;
+    }
+    &-right {
+      padding-right: 80px;
+    }
+    &-link {
+      color: #363636;
+      font-size: 16px;
+    }
+  }
+}

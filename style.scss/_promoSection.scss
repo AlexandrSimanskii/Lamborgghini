@@ -1,0 +1,34 @@
+.promo {
+  background-image: url("../images/Rectangle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 76px;
+    letter-spacing: 0.02em;
+  }
+
+  &__subtitle {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    border-bottom: 1px solid #040404;;
+  }
+  &__subtitle span {
+    color: #9f6b08;
+    font-size: 34px;
+    display: block;
+  }
+  &__text {
+    font-size: 16px;
+    color: #363636;
+  }
+}
