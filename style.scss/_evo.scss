@@ -1,0 +1,99 @@
+.evo {
+  &-black {
+    color: #fff;
+    background-color: #363636;
+    padding: 100px 0 50px;
+    &__inner {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/decor1.svg);
+        width: 185px;
+        height: 213px;
+        top: 175px;
+        left: -140px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/decor2.png);
+        width: 498px;
+        height: 572px;
+        top: 300px;
+        left: -49px;
+      }
+    }
+    &__info {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__infobox {
+      flex-basis: 437px;
+    }
+    &__title {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 32px;
+      padding-right: 30px;
+    }
+
+    &__text {
+      font-style: 14px;
+
+      margin-bottom: 30px;
+    }
+
+    &__img {
+      display: block;
+      margin: 170px auto 60px;
+      position: relative;
+      z-index: 1;
+    }
+    &__descr-list {
+      display: flex;
+      justify-content: center;
+      column-gap: 63px;
+      & dd {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-white {
+    &__inner {
+      padding-top: 125px;
+    }
+    &__text {
+      margin-bottom: 30px;
+
+      &:first-child {
+        max-width: 285px;
+      }
+      &:nth-child(2) {
+        max-width: 437px;
+      }
+      & :nth-child(3) {
+        max-width: 590px;
+      }
+    }
+
+    &__video {
+      margin-top: 100px;
+      background-image: url(../images/evoVideo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 258px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__video-link span {
+      display: block;
+      color: #fff;
+    }
+  }
+}
