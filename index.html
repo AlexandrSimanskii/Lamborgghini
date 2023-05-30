@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lamborghini</title>
+
     <link rel="stylesheet" href="./fonts/Impact/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.scss/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.scss/index.css" />
   </head>
   <body>
@@ -291,7 +293,33 @@
           </div>
         </div>
       </section>
+      <section class="blog">
+        <div class="container">
+          <h class="blog-title">БЛОГ</h>
+          <div class="blog__slider"></div>
+        </div>
+      </section>
     </main>
+    <div class="swiper">
+      
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+     
+      <div class="swiper-pagination"></div>
+
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <script src="./scripts/swiper-bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

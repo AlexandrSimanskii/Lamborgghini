@@ -62,7 +62,25 @@
 
   &-white {
     &__inner {
+      position: relative;
       padding-top: 125px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../images/decor3.png);
+        width: 274px;
+        height: 257px;
+        top: -40px;
+        left: 360px;
+      }&::after {
+        content: "";
+        position: absolute;
+        background-image: url(../images/decor4.png);
+        width: 324px;
+        height: 311px;
+        top: 115px;
+        left: 600px;
+      }
     }
     &__text {
       margin-bottom: 30px;
@@ -73,7 +91,7 @@
       &:nth-child(2) {
         max-width: 437px;
       }
-      & :nth-child(3) {
+      &:nth-child(3) {
         max-width: 590px;
       }
     }

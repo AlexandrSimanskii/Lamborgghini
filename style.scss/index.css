@@ -259,7 +259,26 @@ li {
   text-transform: uppercase;
 }
 .evo-white__inner {
+  position: relative;
   padding-top: 125px;
+}
+.evo-white__inner::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decor3.png);
+  width: 274px;
+  height: 257px;
+  top: -40px;
+  left: 360px;
+}
+.evo-white__inner::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decor4.png);
+  width: 324px;
+  height: 311px;
+  top: 115px;
+  left: 600px;
 }
 .evo-white__text {
   margin-bottom: 30px;
@@ -270,7 +289,7 @@ li {
 .evo-white__text:nth-child(2) {
   max-width: 437px;
 }
-.evo-white__text :nth-child(3) {
+.evo-white__text:nth-child(3) {
   max-width: 590px;
 }
 .evo-white__video {
@@ -288,4 +307,11 @@ li {
 .evo-white__video-link span {
   display: block;
   color: #fff;
-}/*# sourceMappingURL=index.css.map */
+}
+.swiper-slide {
+  color: #040404;
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+} /*# sourceMappingURL=index.css.map */
