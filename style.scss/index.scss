@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Impact", sans-serif;
   src: url(../fonts/Impact/Impact.woff);
@@ -33,8 +32,11 @@ li {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 @import "_header";
 @import "_promo";
 @import "_info";
 @import "_track";
-@import "_evo"
+@import "_evo";
+@import "_blog";
+@import "_swiper";

@@ -1,0 +1,48 @@
+.blog {
+  margin-bottom: 100px;
+
+  &-title {
+    font-weight: 300;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  &-item {
+    &__title {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      min-height: 46px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      cursor: pointer;
+      color: #363636;
+      font-size: 12px;
+    }
+    &__img {
+      margin-bottom: 20px;
+    }
+  }
+  &-btn {
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    // left: 50%;
+    // z-index: 10;
+  }
+}
+.blog__slider {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.swiper-button-left {
+}
+.swiper-button-right {
+  left: 50px;
+}

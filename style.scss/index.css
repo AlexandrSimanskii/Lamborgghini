@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Impact", sans-serif;
   src: url(../fonts/Impact/Impact.woff);
@@ -308,10 +309,157 @@ li {
   display: block;
   color: #fff;
 }
-.swiper-slide {
-  color: #040404;
+
+.blog {
+  margin-bottom: 100px;
 }
+.blog-title {
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.blog-item__title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  min-height: 46px;
+}
+.blog-item__text {
+  margin-bottom: 10px;
+}
+.blog-item__link {
+  cursor: pointer;
+  color: #363636;
+  font-size: 12px;
+}
+.blog-item__img {
+  margin-bottom: 20px;
+}
+.blog-btn {
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.blog__slider {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.swiper-button-right {
+  left: 50px;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
 .swiper {
-  width: 600px;
-  height: 300px;
-} /*# sourceMappingURL=index.css.map */
+  max-width: 1200px;
+  width: 100%;
+  /* overflow: visible; */
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.swiper-slide img {
+  margin-top: 55px;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-next {
+  top: 20px;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.swiper-button-prev {
+  top: 20px;
+  left: 40%;
+  transform: translatex(-50%);
+  transform: rotate(180deg);
+}
+
+.swiper-pagination-bullet {
+  background-color: #15f3f3;
+  border-radius: 0;
+  width: 40px;
+  height: 10px;
+}
+
+/* Мой slider */
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+  position: relative;
+}
+
+.gallary {
+  display: flex;
+  min-width: 100%;
+  width: 800px;
+  height: auto;
+  overflow: hidden;
+}
+
+.gallary .swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.foto-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.foto-slider img {
+  max-width: 400px;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+.btn-next, .btn-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  height: 20px;
+  z-index: 10;
+  color: wheat;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn-next {
+  left: -30px;
+}
+
+.btn-prev {
+  right: -75px;
+}/*# sourceMappingURL=index.css.map */
