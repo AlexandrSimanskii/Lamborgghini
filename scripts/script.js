@@ -2,7 +2,7 @@ const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true /* Круговая система */,
-  speed: 500 /* скорость пролистования */,
+  speed: 1000 /* скорость пролистования */,
   effect: "slids",
   // effect:"flip", /* Переворот карточки. */
   // effect:"fade", /* Расстворение */
@@ -33,15 +33,14 @@ const swiper = new Swiper(".swiper", {
   //     delay: 2000,
   //   },
   breakpoints: {
-   
-      951: {
-        spaceBetween: 10,
-        slidesPerView: 2,
-      },
-      0: {
-        spaceBetween: 5,
-        slidesPerView: 1,
-      },
+    951: {
+      spaceBetween: 10,
+      slidesPerView: 2,
     },
+    0: {
+      spaceBetween: 5,
+      slidesPerView: 1,
+    },
+  },
 });
 
