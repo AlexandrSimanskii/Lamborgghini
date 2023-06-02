@@ -26,7 +26,7 @@
     font-size: 48px;
     border-bottom: 1px solid #040404;
     margin-bottom: 10px;
-   align-self: center;
+    align-self: center;
   }
   &__subtitle span {
     padding: 10px 0;
@@ -44,5 +44,15 @@
     margin-top: auto;
     margin-bottom: 30px;
     align-self: center;
+  }
+}
+@media (max-width: 640px) {
+  .promo {
+    &__title {
+      font-size: 32px;
+    }
+    &__subtitle {
+      font-size: 20px;
+    }
   }
 }

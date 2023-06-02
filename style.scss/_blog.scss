@@ -65,12 +65,12 @@
   display: flex;
   justify-content: space-between;
   column-gap: 10px;
-&__box{
-  flex-basis: 435px;
-}
+  &__box {
+    flex-basis: 435px;
+  }
   & img {
-  padding-left: 15px;
-    
+    width: 100%;
+    padding-left: 15px;
   }
   & span {
     display: block;
@@ -90,5 +90,14 @@
     font-size: 14px;
     font-style: italic;
     color: #040404;
+  }
+}
+@media (max-width: 660px) {
+  .blog-quote {
+    flex-direction: column;
+    // & img {
+    //   width: 60%;
+    //   height: 70%;
+    // }
   }
 }

@@ -19,42 +19,51 @@
   <body>
     <header class="header">
       <div class="container-big">
-        <nav class="header__nav">
-          <ul class="header__list header__list-left">
-            <li class="header__list-item">
-              <a class="header__list-link" href="#">О гонке </a>
-            </li>
-            <li class="header__list-item">
-              <a class="header__list-link" href="#"> Трек </a>
-            </li>
-            <li class="header__list-item">
-              <a class="header__list-link" href="#"
-                >Lamborghini Super trofeo
-              </a>
-            </li>
-            <li class="header__list-item">
-              <a class="header__list-link" href="#">Новости</a>
-            </li>
-          </ul>
-          <a href="">
-            <img class="header-logo" src="./images/logo.svg" alt="Lamborghini"
-          /></a>
-          <ul class="header__list header__list-right">
-            <li class="header__list-item">
-              <a class="header__list-link" href="#">Купить билеты </a>
-            </li>
-            <li class="header__list-item">
-              <a class="header__list-link" href="#">Смотреть онлайн </a>
-            </li>
-            <li class="header__list-item">
-              <a class="header__list-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-menu">
-          <span class="header-menu__btn"></span>
-          <span class="header-menu__btn"></span>
-          <span class="header-menu__btn"></span>
+        <div class="header-wrapper">
+          <div class="header-menu">
+            <span class="header-menu__btn"></span>
+            <span class="header-menu__btn"></span>
+            <span class="header-menu__btn"></span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list header__list-left">
+              <li class="header__list-item">
+                <a class="header__list-link" href="#race">О гонке </a>
+              </li>
+              <li class="header__list-item">
+                <a id="track" class="header__list-link" href="#tracker">
+                  Трек
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#superTrofeo"
+                  >Lamborghini Super trofeo
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#news">Новости</a>
+              </li>
+            </ul>
+            <a href="">
+              <img
+                class="header-logo"
+                src="./images/logo.svg"
+                alt="Lamborghini"
+            /></a>
+            <ul class="header__list header__list-right">
+              <li class="header__list-item">
+                <a class="header__list-link" href="#footer">Купить билеты </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#onelineShow"
+                  >Смотреть онлайн
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -73,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="info">
+      <section id="race" class="info">
         <div class="container">
           <div class="info__part info__part-first">
             <h3 class="info__part-title">СУПЕР ТРОФЕО МИРОВОЙ ФИНАЛ</h3>
@@ -95,7 +104,7 @@
               >
             </div>
             <img
-              class="info__part-img"
+              class="info__part-first-img"
               src="./images/InfoPart1.png"
               alt="race"
               class="info__part-img"
@@ -122,7 +131,7 @@
               </p>
             </div>
             <img
-              class="info__part-img"
+              class="info__part-second-img"
               src="./images/InfoPart2.png"
               alt="race"
             />
@@ -179,7 +188,7 @@
           </div>
         </div>
       </section>
-      <section class="track">
+      <section id="tracker" class="track">
         <div class="container">
           <div class="track__inner">
             <h3 class="track__title">ТРЕК ПОРТИМАО</h3>
@@ -195,7 +204,7 @@
           </div>
         </div>
       </section>
-      <section class="evo">
+      <section id="superTrofeo" class="evo">
         <div class="evo-black">
           <div class="container">
             <div class="evo-black__inner">
@@ -247,22 +256,6 @@
                 <dt>2,9 с</dt>
               </div>
             </dl>
-            <table class="evo-black__table">
-              <tr>
-                <td>ПЕРЕМЕЩЕНИЕ</td>
-                <td>КРУТЯЩИЙ МОМЕНТ</td>
-                <td>МОЩНОСТЬ (л.с.) / МОЩНОСТЬ (КВТ)</td>
-                <td>МАКС. СКОРОСТЬ</td>
-                <td>0-100 КМ/Ч</td>
-              </tr>
-              <tr>
-                <td>5204 см³</td>
-                <td>570 Нм при 6500 об/мин</td>
-                <td>620 л.с. при 8250 об/мин</td>
-                <td>325 км /ч</td>
-                <td>2,9 с</td>
-              </tr>
-            </table>
           </div>
         </div>
         <div class="evo-white">
@@ -288,7 +281,7 @@
                 воздухозаборник, которые делают его мгновенно узнаваемым для
                 зрителей.
               </p>
-              <div class="evo-white__video">
+              <div id="onelineShow" class="evo-white__video">
                 <a href="" class="evo-white__video-link">
                   <img src="./images/icons/video-icon.png" alt="play" />
                   <span>смотреть онлайн</span>
@@ -298,7 +291,7 @@
           </div>
         </div>
       </section>
-      <section class="blog">
+      <section id="news" class="blog">
         <div class="container">
           <h3 class="blog-title">БЛОГ</h3>
           <div class="blog-item">
@@ -412,7 +405,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <h3 class="footer-title"></h3>
         <div class="footer-top">
@@ -444,7 +437,7 @@
             <li class="footer__info-item">
               <ul class="social-list">
                 <li class="social-list__item">
-                  <a class="social-list-link" href="">
+                  <a class="social-list-link" target="_blank" href="">
                     <img
                       src="./images/icons/youtube.svg"
                       alt="youtube"
@@ -453,7 +446,7 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a class="social-list-link" href="">
+                  <a class="social-list-link" target="_blank" href="">
                     <img
                       src="./images/icons/instagram.svg"
                       alt="instagramm"
@@ -462,7 +455,7 @@
                   </a>
                 </li>
                 <li class="social-list__item">
-                  <a class="social-list-link" href="">
+                  <a class="social-list-link" target="_blank" href="">
                     <img
                       src="./images/icons/facebook.svg"
                       alt="facebook"

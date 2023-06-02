@@ -44,3 +44,10 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+const menu = document.querySelector(".header-menu");
+const header = document.querySelector(".header__nav");
+
+menu.addEventListener("click", () => {
+  header.classList.toggle("visible");
+});
+
