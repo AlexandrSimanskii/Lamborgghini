@@ -45,9 +45,10 @@ const swiper = new Swiper(".swiper", {
 });
 
 const menu = document.querySelector(".header-menu");
-const header = document.querySelector(".header__nav");
+const headerNav = document.querySelector(".header__nav");
+const header = document.querySelector(".header");
 
 menu.addEventListener("click", () => {
-  header.classList.toggle("visible");
+  headerNav.classList.toggle("visible");
+  header.classList.toggle("colored");
 });
-

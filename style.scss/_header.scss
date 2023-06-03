@@ -83,7 +83,7 @@
 }
 @media (max-width: 640px) {
   .header {
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     background: linear-gradient(
       180deg,
       #828079 0%,
@@ -108,7 +108,7 @@
       flex-direction: column;
       &-link {
         font-size: 16px;
-        color: #fff;
+        color: #ffffff;
       }
       &-left {
         padding-left: 0;
@@ -120,6 +120,11 @@
     }
   }
 }
-// .visible {
-//   display: flex;
-// }
+.visible {
+  display: flex;
+ 
+}
+.colored{
+  background-color: #d8d4ca;
+  opacity: 0.9;
+}
